@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Meu primeiro app
+      Find your destination
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,17 +9,21 @@
 <ion-content>
   <ion-grid>
     <ion-row>
+      <ion-col>
       <h1>
         Hi Mike,<br>
         Where do you want to go?
       </h1>
+    </ion-col>
     </ion-row>
     <ion-row>
+      <ion-col>
       <ion-item>
         <ion-icon name="location-sharp" slot="start"></ion-icon>
         <ion-input placeholder="Input destination"></ion-input>
         <ion-icon name="arrow-forward-sharp" slot="end"></ion-icon>
       </ion-item>
+    </ion-col>
     </ion-row>
     <ion-row class="ion-align-self-center">
       <ion-col size="auto">
@@ -27,28 +31,68 @@
           Daily Scenery
         </h2>
       </ion-col>
-      <ion-col>
-        <ion-badge color="medium">Updated</ion-badge>
+      <ion-col class="ion-align-self-center">
+        <p>
+          <ion-badge color="light">Updated</ion-badge>
+        </p>
       </ion-col>
       <ion-col size="auto">
-        More
+        <h3>More</h3>
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col>
-        <div>
-          1 of 3
-        </div>
+      <ion-col class="ion-align-self-center">
+      <img src="https://i.ytimg.com/vi/qgk7UXVSi1Q/maxresdefault.jpg">
+    </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-between">
+      <ion-col class="ion-align-self-center">
+        <ion-row>
+          <h5>
+            2020.09.02
+          </h5>
+        </ion-row>
+        <ion-row>
+          <h4>
+            Santa Barbara, United States
+          </h4>
+        </ion-row>
       </ion-col>
-      <ion-col>
-        <div>
-          2 of 3
-        </div>
+      <ion-col size="auto">
+        <ion-avatar>
+          <img class="img2" src="https://randomuser.me/api/portraits/men/88.jpg">
+        </ion-avatar>
       </ion-col>
-      <ion-col>
-        <div>
-          3 of 3
-        </div>
+      <ion-col size="auto">
+        <ion-avatar>
+          <img class="img2" src="https://randomuser.me/api/portraits/women/61.jpg">
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="auto">
+        <h2>
+          City
+        </h2>
+      </ion-col>
+      <ion-col class="ion-align-self-center">
+        <p>
+          <ion-badge color="tertiary">Hot</ion-badge>
+        </p>
+      </ion-col>
+      <ion-col size="auto">
+        <h3>More</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-between">
+      <ion-col size=4>
+        <img width=100% height=100% src="https://i.ytimg.com/vi/oXfvi4aIeMk/maxresdefault.jpg">
+      </ion-col>
+      <ion-col size=4>
+        <img width=100% height=100% src="https://s27922.pcdn.co/wp-content/uploads/2018/06/GERMANY-GUIDE.png">
+      </ion-col>
+      <ion-col size=4>
+        <img width=100% height=100% src="https://s27363.pcdn.co/wp-content/uploads/2019/04/Greece-Header-Photo.jpg.optimal.jpg">
       </ion-col>
     </ion-row>
   </ion-grid>
