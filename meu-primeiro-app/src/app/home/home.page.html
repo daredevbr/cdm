@@ -1,20 +1,56 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Meu primeiro app
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <h1>
+        Hi Mike,<br>
+        Where do you want to go?
+      </h1>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <ion-icon name="location-sharp" slot="start"></ion-icon>
+        <ion-input placeholder="Input destination"></ion-input>
+        <ion-icon name="arrow-forward-sharp" slot="end"></ion-icon>
+      </ion-item>
+    </ion-row>
+    <ion-row class="ion-align-self-center">
+      <ion-col size="auto">
+        <h2>
+          Daily Scenery
+        </h2>
+      </ion-col>
+      <ion-col>
+        <ion-badge color="medium">Updated</ion-badge>
+      </ion-col>
+      <ion-col size="auto">
+        More
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div>
+          1 of 3
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          2 of 3
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          3 of 3
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
