@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <strong>travelApp</strong>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <h1><strong>Hi Mike,<br>
+        Where do you want to go?
+      </strong></h1>
+    <ion-item>
+      <ion-icon name=location></ion-icon>
+      <ion-input></ion-input>
+      <ion-icon name="arrow-forward"></ion-icon>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col>Daily Scenary</ion-col>
+        <ion-col>
+          <ion-badge color="primary">Updated</ion-badge>
+        </ion-col>
+        <ion-col>
+          <ion-text color="light">More</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <img
+            src="https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+        </ion-row>
+        <ion-row>
+          <ion-col>Londres, UK</ion-col>
+          <ion-col size=2.5>
+            <ion-avatar><img src="https://randomuser.me/api/portraits/women/65.jpg"></ion-avatar>
+          </ion-col>
+          <ion-col size=2.5>
+            <ion-avatar><img src="https://randomuser.me/api/portraits/men/91.jpg"></ion-avatar>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-grid>
+      <ion-row>
+        <ion-col>City</ion-col>
+        <ion-col>
+          <ion-badge color="primary">More</ion-badge>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-card class="city-card">
+          <ion-grid>
+            <ion-row>
+              <ion-col><img
+                  src="https://images.pexels.com/photos/208745/pexels-photo-208745.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+              </ion-col>
+              <ion-col><img
+                  src="https://images.pexels.com/photos/4366062/pexels-photo-4366062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+              </ion-col>
+              <ion-col><img
+                  src="https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
+
+
+
+  </ion-grid>
+</ion-content>
