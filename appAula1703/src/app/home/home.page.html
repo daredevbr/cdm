@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      bitConvert
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">{{fromUnit}}</ion-label>
+          <ion-input [(ngModel)]="fromValue"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label [(ngModel)]="fromUnit" position="floating">From</ion-label>
+          <ion-select placeholder="Select">
+            <ion-select-option value="bit">Bit</ion-select-option>
+            <ion-select-option value="byte">Byte</ion-select-option>
+            <ion-select-option value="kilobit">Kilobit</ion-select-option>
+            <ion-select-option value="kilobyte">Kilobyte</ion-select-option>
+            <ion-select-option value="megabit">Megabit</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">{{toUnit}}</ion-label>
+          <ion-input disabled [(ngModel)]="toValue"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-label [(ngModel)]="toUnit" position="floating">To</ion-label>
+          <ion-select placeholder="Select">
+            <ion-select-option value="bit">Bit</ion-select-option>
+            <ion-select-option value="byte">Byte</ion-select-option>
+            <ion-select-option value="kilobit">Kilobit</ion-select-option>
+            <ion-select-option value="kilobyte">Kilobyte</ion-select-option>
+            <ion-select-option value="megabit">Megabit</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

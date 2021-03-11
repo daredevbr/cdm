@@ -1,0 +1,149 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      appAula1003
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+
+    Você tem {{contador}} mensagens não lidas.
+
+    <p>
+
+      Você tem <ion-text [color]="contador > 20? 'danger' : 'success'">{{contador > 20? 'muitas' : 'poucas'}}
+      </ion-text> mensagens não lidas.
+
+    </p>
+
+    Debug {{contador | json}}
+
+    <br><br>
+
+    Debug {{pessoa | json}}
+
+    <br><br>
+
+    <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+
+    <br>
+
+    <ion-progress-bar color="primary" [value]="contador / 100"></ion-progress-bar>
+
+    <br>
+
+    <ion-button (click)="increment()">Aumentar</ion-button>
+
+    <br>
+
+    <ion-button (click)="abatement()">Diminuir</ion-button>
+
+    <br>
+
+    <ion-button (click)="contador=0">Resetar</ion-button>
+
+    <br><br>
+
+    Você clicou {{contador}} {{contador == 1? 'vez' : 'vezes'}}!
+
+    <br><br>
+
+    O número máximo de vezes que você clicou {{maxValue == 1? 'foi' : 'foram'}} {{maxValue}} {{maxValue == 1? 'vez' :
+    'vezes'}}!
+
+    <br><br>
+
+    Saldo: R$ <ion-text [color]="saldo >= 0? 'success' : 'danger'">{{saldo}}</ion-text>
+
+    <br><br>
+
+    <ion-item>
+
+      <ion-input type="number" [(ngModel)]="cash"></ion-input>
+
+      <ion-button (click)="depositar()">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+
+      <ion-button (click)="sacar()">
+        <ion-icon name="remove"></ion-icon>
+      </ion-button>
+
+      <ion-button (click)="sacarTudo()">
+        <ion-icon name="logo-bitcoin"></ion-icon>
+      </ion-button>
+
+    </ion-item>
+
+    <br><br>
+
+    <ion-item>
+      <ion-label position="floating">
+        Description
+      </ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+
+    <br><br>
+
+    <ion-item>
+      <ion-label>Jon</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label>Daenerys</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label>Arya</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-label>Tyrion</ion-label>
+      <ion-checkbox slot="start"></ion-checkbox>
+    </ion-item>
+    <br>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Aceito os termos</ion-label>
+        <ion-toggle [(ngModel)]="accept"></ion-toggle>
+      </ion-item>
+    </ion-list>
+    <br><br>
+
+    <p>Método Selecionado: {{ paymentMethod }}</p>
+    <ion-radio-group [(ngModel)]="paymentMethod">
+      <ion-item>
+        <ion-label>Dinheiro</ion-label>
+        <ion-radio slot="start" value="cash"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Crédito</ion-label>
+        <ion-radio slot="start" value="credit"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Débito</ion-label>
+        <ion-radio slot="start" value="debit"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+    <br><br>
+
+    <ion-item>
+      <ion-label>Método Selecionado</ion-label>
+      <ion-select placeholder="Select One">
+        <ion-select-option value="cash"> Dinheiro </ion-select-option>
+        <ion-select-option value="debit"> Débito </ion-select-option>
+        <ion-select-option value="credit"> Crédito </ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </ion-grid>
+
+</ion-content>
